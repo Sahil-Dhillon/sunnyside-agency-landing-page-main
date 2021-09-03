@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 2rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+header h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    color: hsl(0, 0%, 100%);
+    height: auto;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+}
+
+header ul li {
+    padding: 0.6rem 0rem;
+    height: auto;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    margin: 0.1rem 1rem;
+    border-radius: 20px;
+    color: hsl(0, 0%, 100%);
+    font-size: 1rem;
+}
+
+header ul li .active {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 0%);
+    font-family: Fraunces;
+    font-size: 0.8rem;
+}
+
+header ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    color: hsl(0, 0%, 100%);
+}
+
+main {
+    min-height: 120vh;
+    background-image: url(./images/desktop/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main h1 {
+    text-align: center;
+    font-family: Fraunces;
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    padding: 1rem 0rem;
+}
+
+main .arrow {
+    text-align: center;
+    margin: 9rem;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 500px 500px 500px;
+    gap: 0px 0px;
+    font-family: Barlow, sans-serif;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card1 {
+    padding: 0rem 5rem 0rem 7rem;
+}
+
+.card2 {
+    padding: 0rem 4rem 0rem 5rem;
+}
+
+
+/* - Very dark desaturated blue: hsl(212, 27%, 19%)
+- Very dark grayish blue: hsl(213, 9%, 39%)
+- Dark grayish blue: hsl(232, 10%, 55%)
+- Grayish blue: hsl(210, 4%, 67%) */
+
+.card h2 {
+    font-family: Fraunces, sans-serif;
+    font-size: 2.6rem;
+    /* margin-bottom: 1.2rem; */
+    line-height: 2.8rem;
+    color: hsl(212, 27%, 19%);
+}
+
+.card p {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+    color: hsl(213, 9%, 39%);
+    margin: 2rem 0rem;
+    font-family: Barlow;
+}
+
+.card a {
+    /* border: none; */
+    background-color: hsl(0, 0%, 100%);
+    text-align: center;
+    width: 130px;
+    text-decoration: none;
+    color: hsl(212, 27%, 19%);
+    font-family: Fraunces, sans-serif;
+    line-height: 0.4rem;
+    text-transform: uppercase;
+    padding: 0 2px;
+}
+
+.card .a1 hr {
+    border: 4px solid hsl(51, 100%, 49%);
+    border-radius: 3px;
+    opacity: 40%;
+}
+
+.card a:hover hr {
+    opacity: 100%;
+}
+
+.card .a2 hr {
+    border: 4px solid hsl(7, 99%, 70%);
+    border-radius: 3px;
+    opacity: 40%;
+}
+
+.img-card1 {
+    background-image: url(./images/desktop/image-transform.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img-card2 {
+    background-image: url(./images/desktop/image-stand-out.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hybrid-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 3rem;
+    align-items: center;
+    text-align: center;
+    /* height: 500px; */
+}
+
+.hybrid-card h2 {
+    font-family: Fraunces, sans-serif;
+    padding: 1.2rem;
+}
+
+.hybrid-card p {
+    margin: 0rem 10rem;
+    font-size: 0.9rem;
+    font-family: Barlow;
+}
+
+.hybrid-card1 {
+    background-image: url(./images/desktop/image-graphic-design.jpg);
+    background-size: cover;
+    color: hsl(167, 40%, 24%);
+}
+
+.hybrid-card2 {
+    background-image: url(./images/desktop/image-photography.jpg);
+    background-size: cover;
+    color: hsl(198, 62%, 26%);
+}
+
+.test {
+    width: 100%;
+    background-color: hsl(0, 0%, 100%);
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3rem 3rem;
+}
+
+.test-parent-card {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 7rem;
+}
+
+.test-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 0.6rem;
+    height: 350px;
+}
+
+.test-card img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.test h2 {
+    font-family: Fraunces;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: hsl(210, 4%, 67%);
+    padding-top: 5rem;
+}
+
+.test p {
+    font-family: Barlow;
+    text-align: center;
+    color: hsl(213, 9%, 39%);
+    font-size: 0.95rem;
+}
+
+.test .profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.test .name {
+    text-align: center;
+    font-family: Fraunces;
+    color: hsl(212, 27%, 19%);
+    font-size: 1.1rem;
+}
+
+.test .designation {
+    text-align: center;
+    font-family: Barlow;
+    color: hsl(210, 4%, 67%);
+    font-size: 0.9rem;
+}
+
+.gallery {
+    display: flex;
+    height: 60vh;
+    width: 100%;
+}
+
+.gallery img {
+    object-fit: cover;
+    width: 25%;
+}
+
+footer {
+    width: 100%;
+    background-color: hsl(165, 45%, 73%);
+    text-align: center;
+    /* height: 20vh; */
+    padding: 2rem;
+    color: hsl(168, 34%, 41%);
+}
+
+footer h2 {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    opacity: 90%;
+    color: hsl(167, 40%, 24%);
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 3rem 2rem;
+}
+
+footer ul li a {
+    text-decoration: none;
+    margin: 1rem 2rem;
+    color: hsl(168, 34%, 41%);
+    font-family: Barlow;
+}
+
+footer .social-icons {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer .social-icons li a {
+    text-decoration: none;
+    margin: 0;
+}
+
+footer a:hover {
+    color: white;
+}
+
+footer .social-icons li {
+    margin: 1rem;
+}
+
+footer svg :hover {
+    fill: white;
+}
