@@ -99,20 +99,12 @@ main .arrow {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* padding: 0rem 5rem 0rem 7rem; */
     max-width: 50vw;
+    background-color: #fff;
 }
 
 .card-div {
     width: 80%;
-}
-
-.card1 {
-    /* padding: 0rem 5rem 0rem 7rem; */
-}
-
-.card2 {
-    /* padding: 0rem 4rem 0rem 5rem; */
 }
 
 
