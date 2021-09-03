@@ -38,19 +38,48 @@
                     <li><a href="#" class="active">Contact</a></li>
                 </ul>
             </nav>
+            <div class="toggle-button" onclick="navtoggle()">
+                <span class="bar1 bar"></span>
+                <span class="bar2 bar"></span>
+                <span class="bar3 bar"></span>
+            </div>
         </header>
+        <div class="mobile-nav active-mobile-nav">
+            <nav>
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Project</a></li>
+                    <li><a class="mobile-active" href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
         <h1>We are creatives</h1>
         <div class="arrow"><img src="./images/icon-arrow-down.svg" alt=""></div>
     </main>
     <section class="details">
-        <article class="card  card1">
-            <h2>Transform your brand</h2>
-            <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p> <a href="#" class="a1">Learn more <hr></a></article>
+        <article class="card card1">
+            <div class="card-div">
+
+                <h2>Transform your brand</h2>
+
+                <p>We are a full-service creative agency specializing in helping brands grow fast. Engage your clients through compelling visuals that do most of the marketing for you.</p> <a href="#" class="a1">Learn more 
+                    <hr>
+                </a>
+
+            </div>
+        </article>
         <div class="img-card1"></div>
         <div class="img-card2"></div>
         <article class="card card2">
-            <h2>Stand out to the right audience</h2>
-            <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p><a href="#" class="a2">Learn more <hr></a></article>
+            <div class="card-div">
+                <h2>Stand out to the right audience</h2>
+                <div>
+
+                    <p>Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.</p><a href="#" class="a2">Learn more <hr></a>
+                </div>
+            </div>
+        </article>
         <div class=" hybrid-card hybrid-card1">
             <h2>Graphic design</h2>
             <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
@@ -121,7 +150,14 @@
             Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="">Sahil-Dhillon</a>.
         </div>
     </footer>
+    <script>
+        function navtoggle() {
+            document.querySelector(".toggle-button").classList.toggle("change");
+            document.querySelector(".mobile-nav").classList.toggle("active-mobile-nav");
 
+
+        }
+    </script>
 </body>
 
 </html>

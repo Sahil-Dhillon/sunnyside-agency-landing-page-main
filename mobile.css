@@ -1,28 +1,150 @@
 @media(max-width: 600px) {
+    .mobile-nav {
+        width: 80%;
+        border-right: 20px solid white;
+        border-bottom: 20px solid white;
+        border-top: 20px solid transparent;
+        position: absolute;
+        left: 50%;
+        top: 100px;
+        transform: translateX(-50%);
+        /* display: none; */
+    }
+    .mobile-nav nav {
+        background-color: #fff;
+    }
+    .mobile-nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobile-nav li {
+        width: 100%;
+        list-style: none;
+        padding: 0.8rem;
+        text-align: center;
+    }
+    .mobile-nav li a {
+        text-decoration: none;
+        font-size: 1.1rem;
+        width: 100%;
+        color: #666;
+        font-family: Barlow;
+    }
+    .mobile-nav li .mobile-active {
+        font-family: fraunces;
+        background-color: hsl(51, 100%, 49%);
+        color: black;
+        font-size: 1.2rem;
+        padding: 0.5rem 1.5rem;
+        border-radius: 50px;
+    }
+    .active-mobile-nav .mobile-nav {
+        display: block;
+    }
+    /*  toggle bar  */
+    .toggle-button {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 21px;
+        right: 1.5rem;
+        cursor: pointer;
+        z-index: 1;
+    }
+    .toggle-button .bar1 {
+        transition: 0.5s;
+    }
+    .bar {
+        background-color: #fff;
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 0px;
+    }
+    .toggle-button .bar2 {
+        transition: 0.3s;
+    }
+    .toggle-button .bar3 {
+        transition: 0.5s;
+    }
+    /* Rotate first bar */
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-5px, 5px);
+        transform: rotate(-45deg) translate(-5px, 5px);
+    }
+    /* Fade out the second bar */
+    .change .bar2 {
+        opacity: 0;
+    }
+    /* Rotate last bar */
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
+    }
     header nav {
         display: none;
     }
     main {
         min-height: 100vh;
     }
+    main h1 {
+        font-size: 2rem;
+    }
     main .arrow {
-        margin: 1rem;
+        margin: 1.4rem;
     }
     .details {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100vw;
         /* height: 300vh; */
-        /* grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; */
+        grid-template-rows: 450px 450px 450px 450px 450px 450px;
     }
     .img-card1 {
         order: -2;
-        width: 100%;
+        width: 100vw;
         /* height: 300px; */
     }
-    .card1 {
-        padding: 0rem 1rem 0rem 2rem;
+    .img-card2 {
+        width: 100vw;
     }
-    .card2 {
-        padding: 0rem 1rem 0rem 2rem;
+    .card {
+        padding: 0rem 2rem;
+        align-items: center;
+        /* text-align: center; */
+        text-align: center;
+        max-width: 100vw;
+    }
+    .card h2 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .card a {
+        width: 100px;
+        font-size: 0.8rem;
+    }
+    .card p {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+    .card .a1 hr,
+    .card .a2 hr {
+        transform: translateY(-8px) translateX(-50%);
+        width: inherit;
+        left: 50%;
+        position: absolute;
+    }
+    .hybrid-card {
+        max-width: 100vw;
+    }
+    .hybrid-card h2 {
+        padding: 1rem;
+        font-size: 1.1rem;
+    }
+    .hybrid-card p {
+        margin: 0rem 3rem;
     }
     .test-parent-card {
         width: 100%;
@@ -39,5 +161,29 @@
     }
     .gallery img {
         /* width: 250px; */
+    }
+    .test h2 {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .test p {
+        font-size: 0.8rem;
+    }
+    footer nav ul {
+        margin: 1rem;
+    }
+    footer h2 {
+        font-size: 1.5rem;
+    }
+    footer nav ul li a {
+        margin: 1rem;
+        font-size: 0.7rem;
+    }
+    footer .social-icons li {
+        margin: 0.5rem;
+    }
+    footer svg {
+        width: 20px;
+        height: auto;
     }
 }
